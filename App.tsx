@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
 import SharesComponent from './components/shareInput';
 
 type SectionProps = PropsWithChildren<{
@@ -81,12 +82,11 @@ function App(): React.JSX.Element {
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
           </Section>
+
           <Section title="Here is my first try">
             <Text>My share input app</Text>
 
             <SharesComponent />
-
-
 
           </Section>
           <Section title="See Your Changes">

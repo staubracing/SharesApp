@@ -1,6 +1,16 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
-const styles = StyleSheet.create({
+type Styles = {
+    whiteText: TextStyle;
+    container: ViewStyle;
+    header: TextStyle;
+    input: TextStyle;
+    button: ViewStyle;
+    buttonText: TextStyle;
+    descriptionText: TextStyle;
+};
+
+const styles = StyleSheet.create < Styles > ({
     whiteText: {
         color: 'white',
     },
