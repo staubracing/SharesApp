@@ -25,7 +25,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import { SharesComponent } from './components';
+import { SharesComponent } from './components/SpecificComponents';
 
 type SectionProps = PropsWithChildren<{
   title: string;
