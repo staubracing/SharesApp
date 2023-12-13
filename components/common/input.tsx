@@ -21,7 +21,7 @@ export default function CustomInput({ value, onChangeText, placeholder, keyboard
 
 const styles = StyleSheet.create({
     input: {
-        backgroundColor: "white",
+        backgroundColor: "black",
         padding: 10,
         borderRadius: 5,
         marginVertical: 10,

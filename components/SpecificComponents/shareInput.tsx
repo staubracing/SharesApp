@@ -60,14 +60,14 @@ export default function SharesComponent() {
                 value={inputValue}
                 onChangeText={setInputValue}
                 style={[styles.input, styles.whiteText]}
-                placeholderTextColor="white"
+                placeholderTextColor="black"
                 placeholder="Enter share amount"
             />
             <TextInput
                 value={description}
                 onChangeText={setDescription}
                 style={[styles.input, styles.whiteText]}
-                placeholderTextColor="white"
+                placeholderTextColor="black"
                 placeholder="Enter description of Share"
             />
 
@@ -80,8 +80,8 @@ export default function SharesComponent() {
             </View>
 
             <Button
-                color="white"
-                title="Add Shares"
+                color="blue"
+                title="Submit"
                 onPress={addShare}
             />
         </View>
