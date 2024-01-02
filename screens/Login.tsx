@@ -4,6 +4,7 @@ import { Formik } from 'formik';
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { Auth } from '@aws-amplify/auth';
+import { signIn } from '../services/AuthService';
 
 interface LoginFormValues {
   email: string;
@@ -14,11 +15,8 @@ const LoginForm: React.FC = () => {
   //create login function using the signIn function from AuthService
   const login = async (values: LoginFormValues) => {
     const { email, password } = values;
-    try {
-      await Auth.signIn({ username: email, password: password });
-    } catch (error) {
-      console.log('error signing in', error);
-    }
+    const result = await signIn(email, password);
+    console.log(result);
   };
 
   const intialValues: LoginFormValues = {
