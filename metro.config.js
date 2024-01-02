@@ -10,4 +10,4 @@ const config = {};
 
 module.exports = mergeConfig(getDefaultConfig(__dirname), config);
 
-console.log(`This the Directory Name ${__dirname}`);
+console.log(`This is the Directory Name ${__dirname}`);
