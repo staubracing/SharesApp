@@ -26,10 +26,10 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import { SharesComponent } from './components/SpecificComponents';
+import  LoginForm  from './screens/Login';
 
-import  { Amplify }  from 'aws-amplify';
+import { Amplify } from 'aws-amplify';
 import awsConfig from './services/aws-exports'; // if default export
-
 
 Amplify.configure(awsConfig);
 
@@ -88,26 +88,8 @@ function App(): React.JSX.Element {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}
         >
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-
-          <Section title="Here is my first try">
-            <Text>My share input app</Text>
-
-            <SharesComponent />
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
+          {/* <SharesComponent /> */}
+          <LoginForm />
         </View>
       </ScrollView>
     </SafeAreaView>
