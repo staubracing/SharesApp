@@ -27,6 +27,12 @@ import {
 
 import { SharesComponent } from './components/SpecificComponents';
 
+import  { Amplify }  from 'aws-amplify';
+import awsConfig from './services/aws-exports'; // if default export
+
+
+Amplify.configure(awsConfig);
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
