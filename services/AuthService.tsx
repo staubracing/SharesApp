@@ -3,7 +3,6 @@ import { Auth } from '@aws-amplify/auth';
 export async function signIn(
   username: string,
   password: string,
-  // TODO: This error will clear up once we remove the hardcoded password
   newPassword?: string,
 ) {
   try {

@@ -26,7 +26,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import { SharesComponent } from './components/SpecificComponents';
-import  LoginForm  from './screens/Login';
+import LoginForm from './screens/Login';
 
 import { Amplify } from 'aws-amplify';
 import awsConfig from './services/aws-exports'; // if default export
