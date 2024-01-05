@@ -25,11 +25,11 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import { SharesComponent } from './components/SpecificComponents';
-import LoginForm from './screens/Login';
+import { SharesComponent } from './src/components/SpecificComponents';
+import LoginForm from './src/screens/Login';
 
 import { Amplify } from 'aws-amplify';
-import awsConfig from './services/aws-exports'; 
+import awsConfig from './src/services/aws-exports'; 
 
 Amplify.configure(awsConfig);
 
