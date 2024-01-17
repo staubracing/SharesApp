@@ -4,7 +4,7 @@
  *
  * @format
  */
-
+// React  adn React Native imports
 import React from 'react';
 import type { PropsWithChildren } from 'react';
 import {
@@ -25,11 +25,13 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+// Custom imports
 import { SharesComponent } from './src/components/SpecificComponents';
 import LoginForm from './src/screens/Login';
 
+// AWS Amplify imports
 import { Amplify } from 'aws-amplify';
-import awsConfig from './src/services/aws-exports'; 
+import awsConfig from './src/services/aws-exports';
 
 Amplify.configure(awsConfig);
 
@@ -71,6 +73,10 @@ function App(): React.JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+  const styles = {
+    backgroundColor: isDarkMode ? 'black' : 'white',
+    color: isDarkMode ? 'white' : 'black',
+  };
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -88,8 +94,8 @@ function App(): React.JSX.Element {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}
         >
-          {/* <SharesComponent /> */}
-          <LoginForm />
+          <SharesComponent />
+          {/* <LoginForm /> */}
         </View>
       </ScrollView>
     </SafeAreaView>
