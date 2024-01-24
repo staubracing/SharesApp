@@ -59,14 +59,14 @@ export default function SharesComponent() {
         keyboardType="numeric"
         value={inputValue}
         onChangeText={setInputValue}
-        style={[styles.input, styles.whiteText]}
+        style={[styles.input]}
         placeholderTextColor="black"
         placeholder="Enter share amount"
       />
       <TextInput
         value={description}
         onChangeText={setDescription}
-        style={[styles.input, styles.whiteText]}
+        style={[styles.input]}
         placeholderTextColor="black"
         placeholder="Enter description of Share"
       />

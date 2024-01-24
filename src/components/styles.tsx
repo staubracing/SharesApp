@@ -30,6 +30,8 @@ const styles = StyleSheet.create<Styles>({
     padding: 10,
     fontSize: 20,
     borderRadius: 10,
+    textAlign: 'center',
+    color: 'black',
   },
   button: {
     marginTop: 10,
