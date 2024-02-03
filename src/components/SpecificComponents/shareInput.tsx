@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { View, TextInput, Button, Text } from 'react-native';
-import styles from '../styles';
+import styles from '../../styles/styles';
 
 type Share = {
   value: number;
